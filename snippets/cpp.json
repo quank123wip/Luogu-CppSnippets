@@ -1,0 +1,207 @@
+{
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	//		"$2"
+	//	],
+	// 	"description": "Log output to console"
+	// }
+	"~ ": {
+		"prefix": "~",
+		"body": [
+			"\n~$1()",
+			"{",
+			"$2",
+			"}\n"
+		],
+		"description": "析构函数的代码片段"
+	},
+	"class": {
+		"prefix": "class",
+		"body": [
+			"\nclass ${1:classname}",
+			"{",
+			"public:",
+			"\t${1:classname}();",
+			"\t~${1:classname}();",
+			"private:",
+			"\t${2:/*请在此放置封装内容*/}",
+			"};",
+			"",
+			"${1:classname}::${1:classname}()",
+			"{",
+			"}",
+			"",
+			"${1:classname}::~${1:classname}",
+			"{",
+			"}\n"
+		],
+		"description": "类的代码片段"
+	},
+	"Constructor": {
+		"prefix": "ctor",
+		"body": [
+			"\n${1:classname}()",
+			"{",
+			"\t${1:/*Constructer*/}",
+			"}\n"
+		],
+		"description": "构造函数的代码片段"
+	},
+	"do-while": {
+		"prefix": "do",
+		"body": [
+			"\ndo{",
+			"\t${1:/*要执行的语句*/}",
+			"}while(${2:/*要判断的表达式*/});\n"
+		],
+		"description": "do...while 循环的代码片段"
+	},
+	"else": {
+		"prefix": "else",
+		"body": [
+			"\nelse",
+			"{",
+			"\t${1:/*语句*/}",
+			"}\n"
+		],
+		"description": "else 语句的代码片段"
+	},
+	"enum": {
+		"prefix": "enum",
+		"body": [
+			"\nenum ${1:MyEnum}",
+			"{",
+			"\t$2",
+			"};\n"
+		],
+		"description": "枚举的代码片段"
+	},
+	"enumclass": {
+		"prefix": "enumclass",
+		"body": [
+			"\nenum class ${1:MyEnumClass}",
+			"{",
+			"\t$2",
+			"};\n"
+		],
+		"description": "枚举类的代码片段"
+	},
+	"for": {
+		"prefix": "for",
+		"body": [
+			"\nfor(${1:int} ${2:i} = ${3:0}; ${2:i} < ${4:length}; ${2:i}${5:++/*操作符*/})",
+			"{",
+			"\t${6:/*语句*/}",
+			"}\n"
+		],
+		"description": "for 循环的代码片段"
+	},
+	"for each": {
+		"prefix": "foreach",
+		"body": [
+			"\nfor each (${1:auto} ${2:var} in ${3:collection_to_loop})",
+			"{",
+			"\t${4:/*语句*/}",
+			"}\n"
+		],
+		"description": "foreach 语句的代码片段"
+	},
+	"forr": {
+		"prefix": "forr",
+		"body": [
+			"\nfor (${1:int} ${2:i} = ${3:length - 1}; ${2:i} >= ${4:0}; ${2:i}${5:++/*操作符*/})",
+			"{",
+			"\t${6:/*语句*/}",
+			"}\n"
+		],
+		"description": "逆向 for 循环的代码片段"
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"\nif (${1:/*要判断的表达式*/})",
+			"{",
+			"\t${2:/*语句*/}",
+			"}\n"
+		],
+		"description": "if 语句的代码片段"
+	},
+	"switch": {
+		"prefix": "switch",
+		"body": [
+			"\nswitch (${1:value})",
+			"{",
+			"\t${2:/*cases*/}",
+			"\tdefault:",
+			"\t{",
+			"\t\t${3:/*默认执行时语句*/}",
+			"\t\tbreak;",
+			"\t}",
+			"}\n"
+		],
+		"description": "switch 语句的代码片段"
+	},
+	"case": {
+		"prefix": "case",
+		"body": [
+			"\ncase $1:",
+			"{",
+			"\t$2",
+			"\tbreak;",
+			"}\n"
+		],
+		"description": "case 语句的代码片段"
+	},
+	"struct": {
+		"prefix": "struct",
+		"body": [
+			"\nstruct ${1:MyStruct}",
+			"{",
+			"\t",
+			"}\n",
+		],
+		"description": "struct 的代码片段"
+	},
+	"try-catch": {
+		"prefix": "try",
+		"body": [
+			"\ntry",
+			"{",
+			"\t$1",
+			"}",
+			"catch(const std::exception%)",
+			"{",
+			"\t$2",
+			"}\n"
+		],
+		"description": "try catch 的代码片段"
+	},
+	"union": {
+		"prefix": "union",
+		"body": [
+			"\nunion ${1:UnionName}",
+			"{",
+			"\t$2",
+			"};\n"
+		],
+		"description": "联合的代码片段"
+	},
+	"while": {
+		"prefix": "while",
+		"body": [
+			"\nwhile(${1:/*要判断的表达式*/)",
+			"{",
+			"\t$2",
+			"}\n"
+
+		],
+		"description": "while 循环的代码片段"
+	}
+}
