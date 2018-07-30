@@ -8,13 +8,13 @@
         "vscode": "^1.25.0"
     },
     "categories": [
-        "Keymaps"
+        "Snippets"
     ],
     "contributes": {
         "snippets": [
             {
                 "language": "cpp",
-                "path": "./snippets/snippets.json"
+                "path": "./snippets/cpp.json"
             }
         ]
     }
