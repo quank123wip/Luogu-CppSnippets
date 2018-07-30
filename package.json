@@ -1,0 +1,21 @@
+{
+    "name": "Cpp-Snippets",
+    "displayName": "OI-CppSnippets",
+    "description": "Not yet",
+    "version": "0.0.1",
+    "publisher": "Quank123Wip",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Keymaps"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "cpp",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
